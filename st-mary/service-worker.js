@@ -1,6 +1,7 @@
 //var self = this;
-var CACHE_NAME = 'st-mary-parish';
-var urlsToCache = [
+const CACHE_NAME = 'st-mary-parish';
+const RUNTIME = 'runtime';
+const urlsToCache = [
   './',
   //'/styles/main.css',
   //'/script/main.js'
@@ -18,7 +19,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('activate', event => {
-    const currentCaches = [PRECACHE, RUNTIME];
+    const currentCaches = [CACHE_NAME, RUNTIME];
     event.waitUntil(
       caches.keys().then(cacheNames => {
         return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
