@@ -5,5 +5,22 @@
     </head>
     <body>
         <h1>St Mary</h1>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                if ('serviceWorker' in navigator) {
+                    window.addEventListener('load', function() {
+                        navigator.serviceWorker.register('../assets/js/service-worker.js').then(function(registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }, function(err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                        });
+                    });
+                }else{
+                    console.log('ServiceWorkers are not supported');
+                }
+            });
+        </script>
     </body>
     </html>
