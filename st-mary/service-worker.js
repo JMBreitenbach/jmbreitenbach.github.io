@@ -19,7 +19,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('activate', event => {
-    const currentCaches = [CACHE_NAME, RUNTIME];
+    const currentCaches = [CACHE_NAME];//, RUNTIME];
     event.waitUntil(
       caches.keys().then(cacheNames => {
         return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
