@@ -7,7 +7,7 @@
     <h1>St Peter</h1>
 </body>
 <script>
-    document.on('ready', function(){
+    document.ready(function(){
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
                 navigator.serviceWorker.register('../assets/js/service-worker.js').then(function(registration) {
