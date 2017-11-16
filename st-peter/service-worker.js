@@ -1,4 +1,4 @@
-var self = this;
+//var self = this;
 var CACHE_NAME = 'st-peter-parish';
 var urlsToCache = [
   './',
