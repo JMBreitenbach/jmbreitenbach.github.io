@@ -1,6 +1,6 @@
 var CACHE_NAME = 'st-peter-parish';
 var urlsToCache = [
-  '/',
+  '/assets/*',
   //'/styles/main.css',
   //'/script/main.js'
 ];
