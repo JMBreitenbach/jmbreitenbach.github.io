@@ -1,0 +1,26 @@
+{
+    "short_name":"St Peter",
+    "name":"St Peter Church Of Something",
+    "icons":[
+        {
+            "src":"assets/img/st-peter-1x.png",
+            "type":"image/png",
+            "sizes":"48x48"
+        },
+        {
+            "src":"assets/img/st-peter-2x.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src":"assets/img/st-peter-4x.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url":"https://jmbreitenbach.github.io/st-peter",
+    "background_color": "#99ffcc",
+    "theme_color": "#99ffcc", 
+    "display": "standalone",  
+    "orientation": "portrait"  
+}

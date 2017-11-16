@@ -1,0 +1,26 @@
+{
+    "short_name":"St Mary",
+    "name":"St Mary Church Of Something-else",
+    "icons":[
+        {
+            "src":"assets/img/st-mary-1x.png",
+            "type":"image/png",
+            "sizes":"48x48"
+        },
+        {
+            "src":"assets/img/st-mary-2x.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src":"assets/img/st-mary-4x.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url":"https://jmbreitenbach.github.io/st-mary",
+    "background_color": "#ff99cc",
+    "theme_color": "#ff99cc", 
+    "display": "standalone",  
+    "orientation": "portrait"  
+}
